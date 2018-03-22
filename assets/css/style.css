@@ -1,5 +1,16 @@
 body {
   height: 100%;
-  color:orange
+  color:orange;
 }
 
+nav {
+  background-color: #264653;
+  margin-bottom: 30px;
+}
+
+.navbar-brand {
+  Color: #f4a261;
+  font-style: oblique;
+  font-weight: 900;
+  font-size: 35px;
+}
