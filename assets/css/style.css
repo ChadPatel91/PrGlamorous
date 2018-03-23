@@ -3,6 +3,10 @@ body {
   color:orange;
 }
 
+p{
+  color: black;
+}
+
 nav {
   background-color: #264653;
   margin-bottom: 30px;
@@ -22,6 +26,15 @@ nav {
   font-weight: 900;
   font-size: 15px;
   text-align: center;
+}
+
+#apiBar {
+  background-color: #2a9d8f;
+}
+
+.col-lg-12 {
+  background-color: white;
+  padding: 0%
 }
 
 #footerBody{
