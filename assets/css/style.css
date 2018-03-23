@@ -15,10 +15,18 @@ nav {
   font-size: 35px;
 }
 
+
 #minibar {
   Color: #f4a261;
   font-style: oblique;
   font-weight: 900;
   font-size: 15px;
   text-align: center;
+}
+
+#footerBody{
+  background-color: #264653;
+}
+#cardContainer{
+  background-color: #e9c46a;
 }
