@@ -14,3 +14,9 @@ nav {
   font-weight: 900;
   font-size: 35px;
 }
+#footerBody{
+  background-color: #264653;
+}
+#cardContainer{
+  background-color: #e9c46a;
+}
