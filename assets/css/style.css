@@ -14,3 +14,11 @@ nav {
   font-weight: 900;
   font-size: 35px;
 }
+
+#minibar {
+  Color: #f4a261;
+  font-style: oblique;
+  font-weight: 900;
+  font-size: 15px;
+  text-align: center;
+}
