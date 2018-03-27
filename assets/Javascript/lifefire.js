@@ -18,7 +18,7 @@
     var firstName = $("#first-name").val().trim();
     var lastName = $("#last-name").val().trim();
     var yourEmail = $("#your-email").val().trim();
-    var yourMessage = $("#your-messeage").val();
+    // var yourMessage = $("#your-messeage").val().trim();
 
     var contactInfo = {
       first: firstName,

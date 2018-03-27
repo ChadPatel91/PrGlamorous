@@ -35,7 +35,7 @@ nav {
 }
 
 .col-lg-12 {
-  background-color: white;
+  background-color: white; 
   padding: 0%
 }
 
@@ -45,6 +45,29 @@ nav {
 #cardContainer{
   background-color: #e9c46a;
 }
+
+.carousel-item {
+  align-items: center;
+}
+.carousel-caption  {
+  color: #2a9d8f;
+  font-weight: bolder;
+}
+.w-75 {
+  display: inline-block;
+  margin: 0 auto;
+  width: 50%;
+}
+.calculateBMI {
+  background-color: #2a9d8f
+}
+.clearBMI {
+  background-color: #2a9d8f;
+}
+.aboutheader {
+  color: #e9c46a;
+}
+
 
 
 .tempInfo{
@@ -62,9 +85,10 @@ nav {
   font-style: oblique;
 }
 
+
 .buttonStyle{
   background-color:#f4a261;
-  color:#264653;
+  color: #264653;
   font-weight: bolder;
 }
 
