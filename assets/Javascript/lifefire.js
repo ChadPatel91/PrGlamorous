@@ -12,19 +12,19 @@
 
   var database = firebase.database();
 
-  $("formSubmit").on("click", function(event){
+  $("#formSubmit").on("click", function(event){
     event.preventDefault();
     
     var firstName = $("#first-name").val().trim();
     var lastName = $("#last-name").val().trim();
     var yourEmail = $("#your-email").val().trim();
-    var yourMessage = $("#your-messeage").val().trim();
+    var yourMessage = $("#your-messeage").val();
 
     var contactInfo = {
       first: firstName,
       last: lastName,
       email: yourEmail,
-      message: yourMessage,
+      // message: yourMessage,
     }
     database.ref().push(contactInfo);
     console.log(contactInfo.first);
@@ -37,14 +37,14 @@
     $("#first-name").val("")
     $("#last-name").val("")
     $("#your-email").val("")
-    $("#your-message").val("")
+    // $("#your-message").val("")
 
     database.ref().on("child_added", function(childSnapshot, prevChildKey){
       console.log(childSnapshot.val());
       var firstName = childSnapshot.val().first; 
       var lastName = childSnapshot.val().last; 
       var yourEmail = childSnapshot.val().email; 
-      var yourMessage = childSnapshot.val().message;
+      // var yourMessage = childSnapshot.val().message;
       
       console.log(firstName);
       console.log(lastName);
