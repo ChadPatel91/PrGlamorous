@@ -18,13 +18,13 @@
     var firstName = $("#first-name").val().trim();
     var lastName = $("#last-name").val().trim();
     var yourEmail = $("#your-email").val().trim();
-    var yourMessage = $("#your-messeage").val().trim();
+    // var yourMessage = $("#your-messeage").val().trim();
 
     var contactInfo = {
       first: firstName,
       last: lastName,
       email: yourEmail,
-      message: yourMessage,
+      // message: yourMessage,
     }
     database.ref().push(contactInfo);
     console.log(contactInfo.first);
