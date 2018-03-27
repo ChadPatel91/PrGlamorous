@@ -30,6 +30,8 @@ nav {
 
 #apiBar {
   background-color: #2a9d8f;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
 }
 
 .col-lg-12 {
@@ -43,6 +45,7 @@ nav {
 #cardContainer{
   background-color: #e9c46a;
 }
+
 .carousel-item {
   align-items: center;
 }
@@ -64,6 +67,25 @@ nav {
 .aboutheader {
   color: #e9c46a;
 }
+
+
+
+.tempInfo{
+  text-align: center;
+  text-decoration-line: underline;
+  Color: #f4a261;
+  font-style: oblique;
+  font-weight: 700;
+}
+
+.nameCity{
+  text-align: center;
+  color:#264653;
+  font-weight: 900;
+  font-style: oblique;
+}
+
+
 .buttonStyle{
   background-color:#f4a261;
   color: #264653;
@@ -72,4 +94,27 @@ nav {
 
 .labelstyle{
   color:white
+}
+
+#contactForm{
+  background-color: white;
+  padding: 0%;
+  border-radius: 13px;
+}
+
+#formPadding{
+  padding:5px;
+}
+
+#formSubmit{
+  margin: 5px;
+  float: right;
+}
+
+.event-info{
+  padding:5px;
+  text-align: center;
+  Color: #f4a261;
+  font-style: oblique;
+  font-weight: 700;
 }
