@@ -25,9 +25,10 @@ $(document).ready(function(){
 });
 
 function clearValues() {
-  weight = "";
-  height = "";
-  finalBmi = "";
+    $("[name='weight']").val("");
+  $("[name='height']").val("");
+  $("#meaning").val("");
+  $("#dopeBMI").val("");
   console.log('empty');
 }
 

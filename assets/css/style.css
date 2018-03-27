@@ -59,8 +59,17 @@ nav {
   background-color: #2a9d8f
 }
 .clearBMI {
-  background-color: #2a9d8f
+  background-color: #2a9d8f;
 }
 .aboutheader {
   color: #e9c46a;
+}
+.buttonStyle{
+  background-color:#f4a261;
+  color: #264653;
+  font-weight: bolder;
+}
+
+.labelstyle{
+  color:white
 }
