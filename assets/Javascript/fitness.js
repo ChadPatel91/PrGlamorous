@@ -25,10 +25,10 @@ $(document).ready(function(){
 });
 
 function clearValues() {
-  $("[name='weight']").val() = 0;
-  height = 0;
-  finalBmi = 0;
-  console.log(empty);
+  weight = "";
+  height = "";
+  finalBmi = "";
+  console.log('empty');
 }
 
 $(".clearBMI").on("click",clearValues);
