@@ -43,3 +43,13 @@ nav {
 #cardContainer{
   background-color: #e9c46a;
 }
+
+.buttonStyle{
+  background-color:#f4a261;
+  color:#264653;
+  font-weight: bolder;
+}
+
+.labelstyle{
+  color:white
+}
