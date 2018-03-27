@@ -12,13 +12,14 @@ function weatherForecast(city) {
 
     console.log(response);
 //response.list[0].main.temp_min
-    var tempMax = $("<h1>").text("A High of " + parseFloat(1.8*(response.list[6].main.temp_max-273)+32).toFixed(1)).addClass("tempInfo");
-    var tempMin = $("<h1>").text("A Low of " + parseFloat(1.8*(response.list[8].main.temp_min-273)+32).toFixed(1)).addClass("tempInfo");
-    var humidity= $("<h1>").text("The Humidity will be at " + response.list[6].main.humidity + "%").addClass("tempInfo");
-    var skys= $("<h1>").text("With " + response.list[6].weather[0].description+"'s all day!").addClass("tempInfo");
+    var nameCity= $("<h1>").text("Life Works in " + response.city.name + "!!!").addClass("nameCity");
+    var tempMax = $("<h2>").text("A High of " + parseFloat(1.8*(response.list[13].main.temp_max-273)+32).toFixed(1)).addClass("tempInfo");
+    var tempMin = $("<h2>").text("A Low of " + parseFloat(1.8*(response.list[0].main.temp_min-273)+32).toFixed(1)).addClass("tempInfo");
+    var humidity= $("<h2>").text("The Humidity will be at " + response.list[6].main.humidity + "%").addClass("tempInfo");
+    var skys= $("<h2>").text("With " + response.list[6].weather[0].description+"'s all day!").addClass("tempInfo");
 
     $("#weatherP").empty();
-    $("#weatherP").append(tempMax, tempMin, humidity, skys);
+    $("#weatherP").append(nameCity, tempMax, tempMin, humidity, skys);
   });
  
 };

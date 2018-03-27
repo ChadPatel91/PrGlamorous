@@ -43,14 +43,19 @@ $( document ).ready(function() {
     async:true,
   }).then(function(respond){
     console.log(respond);
-    var eventName=$("<h1>").text(respond._embedded.events[0].name);
-    // var eventPic =;
-    // var eventLoc =;
-    // var eventDate =;
+    var results = respond._embedded.events
+    $("#eventP").empty();
 
-    $("#eventp").empty();
-    $("#eventp").append(eventName)
-    
+    for (var i=0; i<results.length; i++){
+    var eventName=$("<h3>").text(results[i].name);
+    console.log(eventName);
+
+    var eventLink =$("<a class='btn btn-sm btn-outline-dark'> target='_blank'").attr("href", results[i].url).attr("class", "event-info").text("Click for more details.");
+
+    console.log(eventLink);
+
+    $("#eventP").append(eventName, eventLink)
+    }  
   });
   }
   $("#eventCity").on("click", function(event) {
