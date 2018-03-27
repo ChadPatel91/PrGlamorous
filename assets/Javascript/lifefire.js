@@ -37,14 +37,14 @@
     $("#first-name").val("")
     $("#last-name").val("")
     $("#your-email").val("")
-    $("#your-message").val("")
+    // $("#your-message").val("")
 
     database.ref().on("child_added", function(childSnapshot, prevChildKey){
       console.log(childSnapshot.val());
       var firstName = childSnapshot.val().first; 
       var lastName = childSnapshot.val().last; 
       var yourEmail = childSnapshot.val().email; 
-      var yourMessage = childSnapshot.val().message;
+      // var yourMessage = childSnapshot.val().message;
       
       console.log(firstName);
       console.log(lastName);
